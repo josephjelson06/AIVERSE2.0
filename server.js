@@ -13,13 +13,6 @@ const app = express();
 app.use(cors());
 
 // Enable CORS for specific domain and methods
-const corsOptions = {
-    origin: 'http://example.com', // Replace with your allowed domain
-    methods: 'GET,POST', // Restrict allowed methods
-    optionsSuccessStatus: 200
-};
-
-app.use(cors(corsOptions));
 
 
 // Middleware to handle JSON and URL-encoded data
